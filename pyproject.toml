@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "goofish-price-mcp"
+version = "0.1.0"
+description = "Read-only MCP server exposing Xianyu (Goofish) watch-task prices and history from an ai-goofish-monitor SQLite database."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["mcp>=1.2"]
+
+[project.scripts]
+goofish-price-mcp = "goofish_price_mcp.server:main"
+
+[project.urls]
+Homepage = "https://github.com/Usagi-org/ai-goofish-monitor"
